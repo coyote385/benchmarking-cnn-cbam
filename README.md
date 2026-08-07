@@ -7,7 +7,7 @@ divididas en dos categorías: **Pneumonia** (Neumonía) y **Normal**.
 
 El conjunto de datos utilizado en este proyecto es público y se puede descargar directamente desde la plataforma Kaggle a través del siguiente enlace:
 
-📌 **Dataset:** [Chest X-Ray Images (Pneumonia) en Kaggle]([https://kaggle.com](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data))
+📌 **Dataset:** [Chest X-Ray Images (Pneumonia) en Kaggle]((https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data))
 
 > **Nota:** Debido a las restricciones de tamaño de GitHub (5,863 imágenes en formato JPEG), los archivos del dataset no están incluidos en este repositorio. Es necesario descargarlos desde el enlace anterior y posicionarlos en la estructura de carpetas indicada abajo.
 
