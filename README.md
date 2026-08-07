@@ -1,6 +1,6 @@
 ## 📊 El Conjunto de Datos (Dataset)
 
-El proyecto utiliza el dataset público de Kaggle **Chest X-Ray Images (Pneumonia)**, el cual consta de **imágenes de rayos X de tórax (JPEG)** divididas en dos categorías: **Pneumonia** (Neumonía) y **Normal**.
+El proyecto utiliza el dataset público de **Chest X-Ray Images (Pneumonia)**, el cual consta de **imágenes de rayos X de tórax (JPEG)** divididas en dos categorías: **Pneumonia** (Neumonía) y **Normal**.
 
 ---
 
