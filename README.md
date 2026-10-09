@@ -1,21 +1,27 @@
 ## 📊 El Conjunto de Datos (Dataset)
 
-El proyecto utiliza el dataset público de **Chest X-Ray Images (Pneumonia)**, el cual consta de **imágenes de rayos X de tórax (JPEG)** divididas en dos categorías: **Pneumonia** (Neumonía) y **Normal**.
+El proyecto utiliza el dataset médico de referencia pública **LIDC-IDRI** (*Lung Image Database Consortium and Image Database Resource Initiative*), el cual consiste en exploraciones de **Tomografía Computarizada (TC) de tórax** en formato DICOM para la detección, diagnóstico y clasificación de nódulos pulmonares y cáncer de pulmón.
 
 ---
 
 ## 🔗 Origen de los Datos
 
-El conjunto de datos utilizado en este proyecto es público y se puede descargar directamente desde la plataforma Kaggle a través del siguiente enlace:
+El conjunto de datos es administrado por *The Cancer Imaging Archive (TCIA)* y se encuentra disponible públicamente para fines de investigación:
 
-📌 **Dataset:** [Chest X-Ray Images (Pneumonia) en Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data)
+📌 **Dataset:** [LIDC-IDRI en The Cancer Imaging Archive (TCIA)](https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX)
 
-> ⚠️ **Nota:** Debido a las restricciones de tamaño de GitHub (5,863 imágenes en formato JPEG), los archivos del dataset no están incluidos en este repositorio. Es necesario descargarlos desde el enlace anterior y posicionarlos en la estructura de carpetas indicada abajo.
+> ⚠️ **Nota:** Debido al gran volumen de datos (imágenes volumétricas en formato DICOM de 1,018 casos), los archivos originales no se alojan en este repositorio. Es necesario descargarlos directamente mediante la herramienta *NBIA Data Retriever* desde TCIA y organizarlos en la estructura de carpetas definida en este proyecto.
 
 ---
 
 ### 🔍 Características y Rigor Médico
 
-* **Origen:** Las radiografías de tórax (proyección anterior-posterior) pertenecen a cohortes retrospectivas de pacientes pediátricos de 1 a 5 años del *Guangzhou Women and Children’s Medical Center*.
-* **Control de Calidad:** Todas las imágenes pasaron por un filtro previo donde se eliminaron los escaneos de baja calidad o ilegibles.
-* **Validación de Expertos:** Los diagnósticos fueron etiquetados y calificados originalmente por dos médicos expertos antes de ser aprobados para el entrenamiento. Para eliminar errores de sesgo, el conjunto de evaluación (*test*) fue verificado además por un tercer médico experto.
+- **Origen y Cobertura:** Desarrollado por siete instituciones académicas e industrias de imágenes médicas en un esfuerzo conjunto liderado por el *National Cancer Institute (NCI)*.
+- **Volumen de Datos:** Contiene **1,018 casos (estudios de TC de tórax)** de pacientes con presencia confirmada o sospecha de nódulos pulmonares.
+- **Validación Multiexperto:** Cada estudio fue evaluado en un proceso de dos fases por cuatro radiólogos torácicos experimentados. Los expertos identificaron, localizaron y anotaron detalladamente los nódulos (características morfológicas y nivel de malignidad).
+- **Referencia Bibliográfica:**
+  > Armato III, S. G., McLennan, G., Bidaut, L., McNitt-Gray, M. F., Meyer, C. R., Reeves, A. P., ... & Clarke, L. P. (2011). *The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): A completed reference database of lung nodules on CT scans.* **Medical Physics**, 38(2), 915-931. https://doi.org/10.1118/1.3528204
+```<ElicitationsGroup message="¿Deseas complementar alguna otra parte del README para este nuevo dataset?">
+  <Elicitation label="Generar estructura de carpetas para procesar datos DICOM/LIDC-IDRI" query="¿Puedes ayudarme a redactar la sección de estructura de carpetas y preprocesamiento de imágenes DICOM para el README.md?"/>
+  <Elicitation label="Redactar sección de Metodología y Arquitectura CNN + CBAM" query="¿Puedes ayudarme a redactar la sección de Metodología y Modelo (CNN + CBAM) para el README.md?"/>
+</ElicitationsGroup>
